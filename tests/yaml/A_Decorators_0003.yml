@@ -1,0 +1,10 @@
+pipelines:
+- name: A_Decorators_0003
+  steps:
+  - name: A_Decorators_0003
+    type: Bash
+    decorators:
+      - name: decorator1
+    execution:
+      onStart: 
+      - echo "on start"
