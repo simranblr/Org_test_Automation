@@ -1,0 +1,23 @@
+pipelines:
+- name: A_Decorators_0001
+  decorators:
+  - name: sample_decorator
+    execution:
+      onBeforeStart:
+      - echo "before start"
+      onAfterStart:
+      - echo "after start"
+      onBeforeComplete:
+      - echo "before complete"
+      onBeforeSuccess:
+      - echo "before success"
+  steps:
+  - name: A_Decorators_0001
+    type: Bash
+    decorators:
+      - name: sample_decorator
+    execution:
+      onStart: 
+      - echo "on start"
+      onComplete:
+      - echo "on complete"
