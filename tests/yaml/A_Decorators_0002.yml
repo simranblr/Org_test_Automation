@@ -1,5 +1,5 @@
 pipelines:
-- name: A_Decorators_0001
+- name: A_Decorators_0002
   decorators:
   - name: decorator1
     execution:
@@ -14,7 +14,7 @@ pipelines:
       onAfterStart:
       - x=20
   steps:
-  - name: A_Decorators_0001
+  - name: A_Decorators_0002
     type: Bash
     decorators:
       - name: decorator1
