@@ -3,7 +3,7 @@ pipelines:
   decorators:
   - name: sample_decorator
     execution:
-      onBeforeStart:
+      beforeOnStart:
       - x=10
   steps:
   - name: A_Decorators_0004
