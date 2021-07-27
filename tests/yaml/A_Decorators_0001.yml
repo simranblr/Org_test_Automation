@@ -3,13 +3,13 @@ pipelines:
   decorators:
   - name: sample_decorator
     execution:
-      onBeforeStart:
+      beforeOnStart:
       - echo "before start"
-      onAfterStart:
+      afterOnStart:
       - echo "after start"
-      onBeforeComplete:
+      beforeOnComplete:
       - echo "before complete"
-      onBeforeSuccess:
+      beforeOnSuccess:
       - echo "before success"
   steps:
   - name: A_Decorators_0001
