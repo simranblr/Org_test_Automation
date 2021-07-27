@@ -1,0 +1,15 @@
+pipelines:
+- name: A_Decorators_0004
+  decorators:
+  - name: sample_decorator
+    execution:
+      onBeforeStart:
+      - x=10
+  steps:
+  - name: A_Decorators_0004
+    type: Bash
+    decorators:
+      - name: sample_decorator
+    execution:
+      onExecute: 
+      - if [ $x -ne 10 ]; then exit 1; fi
