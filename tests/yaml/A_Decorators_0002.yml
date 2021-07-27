@@ -3,15 +3,15 @@ pipelines:
   decorators:
   - name: decorator1
     execution:
-      onBeforeStart:
+      beforeOnStart:
       - x=10
-      onAfterStart:
+      afterOnStart:
       - if [ $x -ne 20 ]; then exit 1; fi
   - name: decorator2
     execution:
-      onBeforeStart:
+      beforeOnStart:
       - x=15
-      onAfterStart:
+      afterOnStart:
       - x=20
   steps:
   - name: A_Decorators_0002
