@@ -1,0 +1,24 @@
+pipelines:
+- name: A_Decorators_0001
+  decorators:
+  - name: decorator1
+    execution:
+      onBeforeStart:
+      - x=10
+      onAfterStart:
+      - if [ $x -ne 20 ]; then exit 1; fi
+  - name: decorator2
+    execution:
+      onBeforeStart:
+      - x=15
+      onAfterStart:
+      - x=20
+  steps:
+  - name: A_Decorators_0001
+    type: Bash
+    decorators:
+      - name: decorator1
+      - name: decorator2
+    execution:
+      onStart: 
+      - echo "on start"
