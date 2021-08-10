@@ -1,0 +1,14 @@
+template: true
+valuesFilePath: ../values/gitRepoValues.yml
+
+pipelines:
+ - name: 
+   steps:
+      - name: T_SYC_LOCALTEMP_6517_0001_pipeline
+        type: Bash
+        configuration:
+           inputResources:
+            - name: T_SYC_LOCALTEMP_6517_0001_res
+        execution:
+          onExecute:
+            - echo "Executing Step for resource {{ .Values.GitHub.Org_test_Automation }}"
