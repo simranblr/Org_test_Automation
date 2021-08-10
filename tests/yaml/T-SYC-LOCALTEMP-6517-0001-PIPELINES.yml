@@ -2,9 +2,9 @@ template: true
 valuesFilePath: ../values/gitRepoValues.yml
 
 pipelines:
- - name: 
+ - name: T_SYC_LOCALTEMP_6517_0001_pipeline
    steps:
-      - name: T_SYC_LOCALTEMP_6517_0001_pipeline
+      - name: T_SYC_LOCALTEMP_6517_0001_step
         type: Bash
         configuration:
            inputResources:
