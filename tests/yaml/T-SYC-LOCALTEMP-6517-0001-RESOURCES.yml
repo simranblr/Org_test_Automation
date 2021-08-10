@@ -1,0 +1,10 @@
+resources:
+  - name: T_SYC_LOCALTEMP_6517_0001_res
+    type: GitRepo
+    configuration:
+      path: rahulnlb1/Org_test_Automation
+      gitProvider: s_gitHub
+      branches:
+        include: ^{{gitBranch}}$
+      files:
+        include: \bexecTemplates\/.+\b
