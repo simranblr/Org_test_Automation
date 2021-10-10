@@ -1,0 +1,10 @@
+pipelines:
+  - name: API_NON_ROOT_BUILD
+    steps:
+      - name: API_NON_ROOT_BUILD_STEP1
+        type: Bash
+        configuration:
+          nodePool: Static_node_non_root
+        execution:
+          onExecute:
+            - echo "hi"
