@@ -1,10 +1,10 @@
 pipelines:
-  - name: API_NON_ROOT_BUILD
+  - name: N_DyNodeGCP_4109_0013
     steps:
-      - name: API_NON_ROOT_BUILD_STEP1
+      - name: N_DyNodeGCP_4109_0013_step1
         type: Bash
         configuration:
-          nodePool: Static_node_non_root
+          nodePool: GCP_dynamic_nodePool_rootless
         execution:
           onExecute:
             - echo "hi"

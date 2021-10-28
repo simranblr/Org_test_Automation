@@ -1,0 +1,10 @@
+pipelines:
+  - name: N_DyNodeGCP_4109_0014
+    steps:
+      - name: N_DyNodeGCP_4109_0014_step1
+        type: Bash
+        configuration:
+          nodePool: GCP_dynamic_nodePool_rootless
+        execution:
+          onExecute:
+            - echo "hi"

@@ -1,0 +1,10 @@
+pipelines:
+  - name: NR_STATIC_4109_0016
+    steps:
+      - name: NR_STATIC_4109_0016_STEP1
+        type: Bash
+        configuration:
+          nodePool: NR_STATIC_4109_0016
+        execution:
+          onExecute:
+            - echo "hi"

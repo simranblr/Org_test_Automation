@@ -1,0 +1,10 @@
+pipelines:
+  - name: N_DyNodeAzure_4109_0008
+    steps:
+      - name: N_DyNodeAzure_4109_0008_step1
+        type: Bash
+        configuration:
+          nodePool: azure_dynamic_nodePool_rootless
+        execution:
+          onExecute:
+            - echo "hi"

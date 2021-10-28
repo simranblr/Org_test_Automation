@@ -1,10 +1,10 @@
 pipelines:
-  - name: API_NON_ROOT_BUILD
+  - name: NR_DyNodeAWS_4109_0004
     steps:
-      - name: API_NON_ROOT_BUILD_STEP1
+      - name: NR_DyNodeAWS_4109_0004_step1
         type: Bash
         configuration:
-          nodePool: Dynamic_node_non_root
+          nodePool: AWS_dynamic_node_u18_rootless
         execution:
           onExecute:
             - echo "hi"
